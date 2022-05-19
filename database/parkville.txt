@@ -1,0 +1,82 @@
+Entities:
+-User 
+  id(PK)
+  -name
+  -role
+     -manager
+  -department
+   -Parking
+   -tyre clinic
+   -battery
+
+-Unit 
+ -id (pk)
+ -numberplate(unique key)
+ -color
+ -model
+
+
+-Parking service
+ -id (PK)
+ -user_id (fk)
+ -driver-id(fk)
+ -unit(fk)
+ -ParkingCharges_id (FK)
+ -drivername
+ -dateOfArrival(DATE AND TIME)
+ -dateOfDepature(date and time)
+ -driverPhoneNumber
+
+Driver:
+-id(pk)
+-name 
+-gender
+-nin
+-phonenumber
+
+
+-ParkingCharges:
+ -id (PK VARCHA 50)
+ -unitType
+   -truck
+   -taxi
+   -personal 
+   -coaster
+   -bodaboda
+ -duration
+   -day
+   -night
+   -<3hrs 
+-fee
+
+-CarTyre
+-id(pk)
+-size
+-make
+-carModel
+
+-CarTyreServiiceFee
+-id(pk)
+-name
+-fee
+
+
+cartyreservice
+-id (pk)
+user_id(fk)
+ -unit_id(fk)
+ -CarTyreServiiceFee (FK)
+
+battery
+-id (PK)
+-user_id(fk)
+-unit_id(FK)
+-batterysize
+-service fees
+
+-on signing off,
+driver
+-re
+
+
+
